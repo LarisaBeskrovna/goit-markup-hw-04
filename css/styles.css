@@ -404,6 +404,16 @@ border-radius: 4px;
 
 /*підвал*/
 
+.container-footer{
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+   margin: 0;
+   margin-left: auto;
+   margin-right: auto;
+   display: flex; 
+}
+
 .caption-footer{
     background: #2F303A;
 }
@@ -413,7 +423,10 @@ border-radius: 4px;
    margin-bottom: 20px;
    width: 145px;
 }
-
+.adres-blok{
+    
+    padding-bottom: 60px;
+}
 .adres{
     font-style: normal;
 font-size: 14px;
@@ -471,6 +484,7 @@ padding-bottom: 60px;
     fill: var(--color-button);
 }
 .info{
+    display: flex;
     font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
