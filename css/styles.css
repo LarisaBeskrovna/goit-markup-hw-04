@@ -7,6 +7,7 @@
     --color-logo: #2196F3;
     --color-title: #212121;
     --color-icon: #AFB1B8;
+    
 }
 .container{
     max-width: 1200px;
@@ -150,20 +151,42 @@ color: var(--color-logo);
 }
 .contacte{
     display: flex;
-gap: 50px;
+    background: none;
 }
 .envelope{
+    display: flex;
     padding: 0;
     border: none;
     width: 20px;
     height: 20px;
+     align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    
     
 }
 .envelope-box{
     width: 16px;
     height: 12px;
+    fill: #757575;
+   
+}
+.smartphone{
+    display: flex;
+    padding: 0;
+    border: none;
+    width: 20px;
+    height: 20px;
+     align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: 30px;
+    
 }
 
+.envelope-box:hover{
+    fill: var(--color-logo);
+}
 
 /* cекція перша*/
 .caption{
@@ -364,7 +387,28 @@ letter-spacing: 0.03em;
 color: #757575;
 padding-top: 10px;
 }
-
+.social-subtite{
+    display: block;
+      padding-top: 16px;
+      padding-left: 32px;
+      padding-right: 32px;
+ }
+ .socisl-list-subtite{
+    width: 44px;
+    height: 44px;
+    border: none;
+ }
+ .socisl-list-subtite:hover{
+    border-radius: 50%;
+    background: var(--color-logo);
+ }
+ .social-icon-subtite{
+    fill: var(--color-icon);
+ }
+ .social-icon-subtite:hover{
+   
+    fill: var(--color-button);
+ }
 /*секція п.ята*/
 
 .client{
@@ -405,13 +449,8 @@ border-radius: 4px;
 /*підвал*/
 
 .container-footer{
-    max-width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-   margin: 0;
-   margin-left: auto;
-   margin-right: auto;
    display: flex; 
+   
 }
 
 .caption-footer{
@@ -419,12 +458,14 @@ border-radius: 4px;
 }
 
 .logo-box{
+    display: block;
     padding-top: 60px;
    margin-bottom: 20px;
-   width: 145px;
+   
 }
 .adres-blok{
-    
+    display: block; 
+    margin-top: 20px;
     padding-bottom: 60px;
 }
 .adres{
@@ -452,17 +493,21 @@ padding-bottom: 60px;
     margin-top: 10px;
 }
 .info-blok{
-    display: block;
+   
     margin-top: 70px;
-    margin-left: 72px;
+    margin-left: 70px;
     
 }
 .social{
     display: flex;
-    align-items: center;
     gap: 10px;
-   
+     
 }
+.social-blok{
+   display: block;
+     padding-top: 20px;
+}
+
 .socisl-list{
     width: 44px;
     height: 44px;
@@ -490,8 +535,7 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--color-button);
-margin-top: 70px;
-    margin-left: 72px;
+
 
 
 }
