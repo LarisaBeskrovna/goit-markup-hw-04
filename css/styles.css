@@ -141,6 +141,7 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 text-decoration: none;
 color: #757575;
+padding-left: 10px;
 
 }
 .contact:hover,
@@ -158,27 +159,20 @@ fill: var(--color-logo);
 .contacte{
     display: flex;
     background: none;
+    
 }
-.envelope{
+
+
+.envelope-list{
     display: flex;
-    padding: 0;
-    border: none;
-    width: 20px;
     height: 20px;
      align-items: center;
     justify-content: center;
     margin-right: 10px;
     fill: #757575;
- 
-}
-.envelope:hover,
-.contact:focus
-{
-fill: var(--color-logo);
-}
-.envelope-list{
-    display: flex;
     cursor: pointer;
+
+    
 
 }
 .envelope-list:hover
@@ -189,25 +183,31 @@ fill: var(--color-logo);
 }
 
 .envelope-box{
-    width: 16px;
+    width: 30px;
     height: 12px;
    fill: currentColor;
-    
+   padding-right: 10px;
+
    
 }
-.smartphone{
+
+.smartphone-list{
     display: flex;
-    padding: 0;
-    border: none;
-    width: 20px;
     height: 20px;
-     align-items: center;
+    align-items: center;
     justify-content: center;
     margin-right: 10px;
-    margin-left: 30px;
+    fill: #757575;
+    cursor: pointer;
+    gap: 10px;
+
+}
+.smartphone-list:hover
+.smartphone-list:focus
+{
+    color: var(--color-logo);
     
 }
-
 .envelope-box:hover
 .envelope-box:focus{
     fill: var(--color-logo);
@@ -381,7 +381,10 @@ color: #757575;
  
 .card{
     background: var(--color-button);
-
+    
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    
 }
 .subtitle{
    
@@ -433,20 +436,17 @@ padding-top: 10px;
     width: 44px;
     height: 44px;
     border: none;
-     
-     
  }
- .socisl-list-subtite:hover,
- .socisl-list-subtite:focus{
-    border-radius: 50%;
-    background: var(--color-logo);
-    fill: var(--color-button);
+ .social{
+    padding-bottom: 30px;
  }
  .socisl-link{
     fill: var(--color-icon);
  }
  .socisl-link:hover,
  .socisl-link:focus{
+    border-radius: 50%;
+    background: var(--color-logo);
     fill: var(--color-button);
  }
 
@@ -485,10 +485,11 @@ fill: var(--color-logo);
 .client-list:hover,
 .client-list:focus{
     fill: var(--color-logo);
+    border: 1px solid var(--color-logo);
+border-radius: 4px;
+
 }
-.client-icon:hover{
-    
-}
+
 
 
 /*підвал*/
@@ -531,7 +532,7 @@ color: rgba(255, 255, 255, 0.6);
 text-decoration: none;
 list-style-type: none;
 padding: 0;
-padding-bottom: 60px;
+
 }
 
 .adress{
@@ -594,7 +595,7 @@ color: var(--color-button);
     display: flex;
     
     padding: 0;
-    gap: 20px;
+    gap: 30px;
     margin-top: 34px;
     
 }
@@ -636,6 +637,7 @@ margin: 0;
     padding-bottom: 94px;
 }
 .list{
+    width: 370px;
     background: #FFFFFF;
 border: 1px solid #EEEEEE;
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
